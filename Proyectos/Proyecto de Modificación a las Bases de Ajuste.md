@@ -44,18 +44,16 @@ De manera general, este proyecto tiene como objetivo mejorar la colocación y di
 
 ```mermaid
 graph TD
-	A[Conexión con la DB] --> B[Extraer clasificación de Oficinas] 
-	A --> C[Extraer el conteo y ubicación de las Bases actuales] 
-	A --> D[Extraer y filtrar el recuento de Siniestros] 
+	A[Conexión con la DB] --> B[Extraer clasificación de Oficinas, <br> Extraer ubicación de las Bases actuales <br> Extraer recuento de Siniestros en Oficina] 
 	B --> E[Determinar el número Óptimo de Bases]
-	C --> E
-	D --> E
 	E --> F[Calcular la ubicacion de las Bases]
-	F --> G{¿Mejor Cobertura?}
-	G -->|Sí| H{¿Más de 1km?} 
-		H -->|Sí| J[Añadir etiqueta Booleana que indique que el cambio es recomendable]
-		H -->|No|I[Guardar resultados a Tabla Temporal y exportar como CSV] 
+	F --> G{¿Mejor cobertura?}
+	G -->|Sí| H{¿Nueva base a <br> más de 1km?} 
+		H -->|Sí| J[Añadir etiqueta Booleana que indique <br> que el cambio es recomendable]
+		H -->|No|I[Guardar resultados a Tabla <br> Temporal y exportar como CSV] 
 	G -->|No| I
+	J --> I
+	I --> K[Generar Mapas de Cobertura de <br> Siniestros y de Cambio de Bases]
 ```
 
 
