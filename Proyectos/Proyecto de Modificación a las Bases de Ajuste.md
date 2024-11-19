@@ -49,7 +49,7 @@ graph TD
 	E --> C{K Sugerida > <br> # De Bases Actuales}
 	C --> |Sí| D[Usar K Sugerida]
 	C --> |No| L[Usar # De Bases Actuales]
-	D --> F[Calcular la ubicacion de las Bases]
+	D --> F[Calcular la ubicacion <br> óptima de las Bases]
 	L --> F
 	F --> G{¿Mejor cobertura?}
 	G -->|Sí| H{¿Nueva base a <br> más de 1km?} 
