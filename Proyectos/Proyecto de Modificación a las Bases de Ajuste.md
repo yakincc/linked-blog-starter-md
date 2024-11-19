@@ -46,7 +46,11 @@ De manera general, este proyecto tiene como objetivo mejorar la colocación y di
 graph TD
 	A[Conexión con la DB] --> B[Extraer clasificación de Oficinas, <br> Extraer ubicación de las Bases actuales <br> Extraer recuento de Siniestros en Oficina] 
 	B --> E[Determinar el número Óptimo de Bases]
-	E --> F[Calcular la ubicacion de las Bases]
+	E --> C{K Sugerida > <br> # De Bases Actuales}
+	C --> |Sí| D[Usar K Sugerida]
+	C --> |No| L[Usar # De Bases Actuales]
+	D --> F[Calcular la ubicacion de las Bases]
+	L --> F
 	F --> G{¿Mejor cobertura?}
 	G -->|Sí| H{¿Nueva base a <br> más de 1km?} 
 		H -->|Sí| J[Añadir etiqueta Booleana que indique <br> que el cambio es recomendable]
