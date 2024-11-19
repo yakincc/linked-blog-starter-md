@@ -37,3 +37,19 @@ De manera general, este proyecto tiene como objetivo mejorar la colocación y di
 |                                                              | Incorporar una API de rutas geográficas para determinar las bases de ajuste por distancia y tiempo en ruta.        | 25/11/2024          | 29/11/2024   | <span style="color:  	#9b9b9b;">Por Comenzar<span> |
 | **Fase 5: Experimentación y Validación de Enfoques**         | Realizar experimentación para determinar el mejor enfoque de optimización.                                         | 02/12/2024          | 15/12/2024   | <span style="color:  	#9b9b9b;">Por Comenzar<span> |
 |                                                              | Comparar KPIs con datos históricos e incorporar la re-evaluación con ventanas de tiempo móviles.                   | 02/12/2024          | 15/12/2024   | <span style="color:  	#9b9b9b;">Por Comenzar<span> |
+
+
+## **Estructura del Pipeline**
+
+
+```mermaid
+graph TD
+	A[Data Collection] --> B[Data Preprocessing] 
+	B --> C[Feature Engineering] 
+	C --> D[Model Training] 
+	D --> E{Is the Model Accurate?} 
+	E -->|Yes| F[Deploy Model] 
+	E -->|No| G[Hyperparameter Tuning] 
+	G --> D
+```
+
