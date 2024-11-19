@@ -50,10 +50,14 @@ graph TD
 	B --> E[Determinar el número Óptimo de Bases]
 	C --> E
 	D --> E
-	E --> F[Calcular la ubicacion de las Bases (K-Means)]
-	F --> G{¿La C}
-	G -->|Yes| F[Deploy Model] 
-	E -->|No| G[Hyperparameter Tuning] 
-	G --> D
+	E --> F[Calcular la ubicacion de las Bases]
+	F --> G{¿Mejor Cobertura?}
+	G -->|Sí| H{¿Más de 1km?} 
+		H -->|Sí| J[Añadir etiqueta Booleana que indique que el cambio es recomendable]
+		H -->|No|I[Guardar resultados a Tabla Temporal y exportar como CSV] 
+	G -->|No| I
 ```
+
+
+
 
