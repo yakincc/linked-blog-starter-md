@@ -69,7 +69,7 @@
 15. Cerrar el archivo `BD_Time_Series.xlsx`
 
 16. Abrir el archivo `CSL - Prosin - Wall - Mes.pbix`
-17. Actualizar, Guardar y publicar el Dashboard en el área de trabajo `CSL Polywall`
+17. Actualizar, Guardar y publicar el Dashboard en el área de trabajo `DS-CSL-APP`  
 
 18. Abrir el archivo `Proyección Siniestros`
 19.  Actualizar, Guardar y publicar el Dashboard en el área de trabajo `CLS - Proyectos del Equipo de Inteligencia Operativa (TEST)`
