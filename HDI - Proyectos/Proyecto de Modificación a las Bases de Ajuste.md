@@ -44,7 +44,7 @@ De manera general, este proyecto tiene como objetivo mejorar la colocación y di
 
 ```mermaid
 graph TD
-	A[Conexión con la DB] --> B[Extraer clasificación de Oficinas, <br> Extraer ubicación de las Bases actuales <br> Extraer recuento de Siniestros en Oficina] 
+	A[Conexión con el DWH] --> B[Extraer clasificación de Oficinas, <br> Extraer ubicación de las Bases actuales <br> Extraer recuento de Siniestros en Oficina] 
 	B --> E[Determinar el número Óptimo de Bases]
 	E --> C{K Sugerida > <br> # De Bases Actuales}
 	C --> |Sí| D[Usar K Sugerida]
