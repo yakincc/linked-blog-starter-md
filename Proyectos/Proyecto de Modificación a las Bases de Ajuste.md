@@ -44,11 +44,15 @@ De manera general, este proyecto tiene como objetivo mejorar la colocación y di
 
 ```mermaid
 graph TD
-	A[Data Collection] --> B[Data Preprocessing] 
-	B --> C[Feature Engineering] 
-	C --> D[Model Training] 
-	D --> E{Is the Model Accurate?} 
-	E -->|Yes| F[Deploy Model] 
+	A[Conexión con la DB] --> B[Extraer clasificación de Oficinas] 
+	A --> C[Extraer el conteo y ubicación de las Bases actuales] 
+	A --> D[Extraer y filtrar el recuento de Siniestros] 
+	B --> E[Determinar el número Óptimo de Bases]
+	C --> E
+	D --> E
+	E --> F[Calcular la ubicacion de las Bases (K-Means)]
+	F --> G{¿La C}
+	G -->|Yes| F[Deploy Model] 
 	E -->|No| G[Hyperparameter Tuning] 
 	G --> D
 ```
