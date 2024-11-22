@@ -76,7 +76,7 @@
 
 20. Abrir `Analiz > Proyección de Regionales`
 21. Renombrar Pronóstico por Oficina al día anterior al viernes actual y Abrir.
-22. En la Hoja de Pronóstico, Buscar la Columna Q, colocar el cursor en el primer valor de esa columna (No encabezado) y seleccionar todo hasta el final de la columna. Copiar y pegar como valores en la columna U.
+22. En la Hoja de Pronóstico,  Buscar la Columna Q, colocar el cursor en el primer valor de esa columna (No encabezado) y seleccionar todo hasta el final de la columna. Copiar y pegar como valores en la columna U.
 
 23. Abrir el query del paso 4, clic derecho en la esquina superior izquierda de la vista resultante y presionar `select all > copy with headers`. En la hoja `Datos`, posicionarse en la primera casilla y pegar con pegado especial y texto Unicode.
 24. Verificar nuevamente que la cantidad de filas corresponda con la cantidad de filas de la vista.
