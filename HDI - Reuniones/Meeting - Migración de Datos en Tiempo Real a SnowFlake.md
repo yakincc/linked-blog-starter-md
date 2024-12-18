@@ -15,5 +15,8 @@ Objetivo: Determinar los pasos a seguir para llevar a cabo la migración de los 
 
 Puntos Tratados:
 - Resumen de la problemática actual: Desacoplamiento de los datos en tiempo real de DWH. Posible solución, Migrar a Snowflake.
-Acuerdos:
+- Actualmente existe una solución parcial: Datalake en data.hdi.com.mx tiene datos dummy y está habilitada y desacoplada para usar los datos en tiempo real.
 - 
+Acuerdos:
+- Determinar los procesos críticos y sus orígenes para el equipo de Ingeniería de Datos. (CSL - Yakin)
+- Siguiente Reunión con Omar Gomez y Pedro Espinosa 
