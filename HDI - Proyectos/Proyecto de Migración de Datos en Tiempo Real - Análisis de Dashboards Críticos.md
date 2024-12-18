@@ -20,5 +20,14 @@
 
 ### \[CSL] - Monitoreo de Operación y Bases
 
+#### Vistas
+- Dshd.VW_DWH_MonitoreoAutomatizadoDeBases_CSL  (DWH PR - HDI_DWH)
+- Dshd.VW_BI_CSL_IntegralReportes_RealTime (DWH PR - HDI_DWH)
+#### Tablas
+- Dshd.TB_DWH_MonitoreoAutomatizadoDeBases_ReportesHora_CSL (DWH PR - HDI_DWH)
+- Dshd.TB_DWH_MonitoreoAutomatizadoDeBases_AjustadoresHora_CSL (DWH PR - HDI_DWH)
+- Dshd.TB_DWH_MonitoreoAutomatizadoDeBases_RepAjusXDistanciaBases_CSL (DWH PR - HDI_DWH)
+- Dshd.TB_DWH_MonitoreoAutomatizadoDeBases_PrcXHora_CSL  (DWH PR - HDI_DWH)
+- Dshd.TB_DWH_MonitoreoAutomatizadoDeBases_CSL (DWH PR - HDI_DWH)
 
 ### \[CSL] - Traslado por Reporte 
