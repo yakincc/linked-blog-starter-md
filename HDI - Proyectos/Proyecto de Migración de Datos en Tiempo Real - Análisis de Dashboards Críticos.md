@@ -34,3 +34,7 @@
 - Dshd.TB_DWH_MonitoreoAutomatizadoDeBases_CSL (DWH PR - HDI_DWH)
 
 ### \[CSL] - Traslado por Reporte 
+#### Vistas
+- 
+
+#### Tablas
