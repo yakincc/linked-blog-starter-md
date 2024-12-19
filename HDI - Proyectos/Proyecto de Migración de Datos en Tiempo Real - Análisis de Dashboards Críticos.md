@@ -47,3 +47,10 @@
 - Dshd.VW_BI_CLS_Distancias_ReportesSinAsignar_Vs_Ajustadores
 #### Tablas
 - DWH.Tb_bi_GrlSinComentariosvivo
+
+### \[CSL] - Visor de ajustadores en tiempo real
+
+#### Vistas
+- dbo.VW_BI_CatOficina
+- Dshd.VW_BI_EstatusAjustador_PosicionAjustador
+- Dshd.VW_BI_CLS_IntegralReportes_FechaHoraCarga
