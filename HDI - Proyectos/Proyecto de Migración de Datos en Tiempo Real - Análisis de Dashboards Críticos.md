@@ -6,6 +6,7 @@
 - [[CSL] - Visor de distancias por reporte](https://app.powerbi.com/groups/b9ecf1f9-111f-4bb9-bad3-e5b5525f93f2/reports/42ae2dd0-ae6b-469b-903d-89d2fa8a01f5/ReportSection?experience=power-bi)
 - [(CSL) - Visor de ajustadores en tiempo real](https://app.powerbi.com/groups/b9ecf1f9-111f-4bb9-bad3-e5b5525f93f2/reports/54e04ec5-957c-4d28-8a0b-af35a49178a5/ReportSection2df0d3241e46e50daee2?experience=power-bi)
 - [[CSL] -  Visor Pendientes de asignación](https://app.powerbi.com/groups/b9ecf1f9-111f-4bb9-bad3-e5b5525f93f2/reports/9a52e8df-d12f-45c3-a606-9b6abfe1f059?experience=power-bi)
+- [[CSL] - Localizacion de ajustadores](https://app.powerbi.com/groups/a78286f2-55cb-477e-9793-6731b5124964/reports/7ebbbf8a-f6d8-4797-9f57-add2d2a6fa84/ReportSection?experience=power-bi)
 
 ## Fuentes por Dashboard:
 ### \[CSL\]- Monitoreo General Oficina
@@ -23,14 +24,14 @@
 ### \[CSL] - Monitoreo de Operación y Bases
 
 #### Vistas
-- Dshd.VW_DWH_MonitoreoAutomatizadoDeBases_CSL  (DWH PR - HDI_DWH)
-- Dshd.VW_BI_CSL_IntegralReportes_RealTime (DWH PR - HDI_DWH)
+- Dshd.VW_DWH_MonitoreoAutomatizadoDeBases_CSL
+- Dshd.VW_BI_CSL_IntegralReportes_RealTime
 #### Tablas
-- Dshd.TB_DWH_MonitoreoAutomatizadoDeBases_ReportesHora_CSL (DWH PR - HDI_DWH)
-- Dshd.TB_DWH_MonitoreoAutomatizadoDeBases_AjustadoresHora_CSL (DWH PR - HDI_DWH)
-- Dshd.TB_DWH_MonitoreoAutomatizadoDeBases_RepAjusXDistanciaBases_CSL (DWH PR - HDI_DWH)
-- Dshd.TB_DWH_MonitoreoAutomatizadoDeBases_PrcXHora_CSL  (DWH PR - HDI_DWH)
-- Dshd.TB_DWH_MonitoreoAutomatizadoDeBases_CSL (DWH PR - HDI_DWH)
+- Dshd.TB_DWH_MonitoreoAutomatizadoDeBases_ReportesHora_CSL
+- Dshd.TB_DWH_MonitoreoAutomatizadoDeBases_AjustadoresHora_CSL
+- Dshd.TB_DWH_MonitoreoAutomatizadoDeBases_RepAjusXDistanciaBases_CSL
+- Dshd.TB_DWH_MonitoreoAutomatizadoDeBases_PrcXHora_CSL
+- Dshd.TB_DWH_MonitoreoAutomatizadoDeBases_CSL
 
 ### \[CSL] - Traslado por Reporte 
 #### Vistas
@@ -68,6 +69,8 @@
 ## Resumen de Fuentes en Tiempo Real
 
 ### Vistas
-- 
+- Dshd.VW_BI_CLS_IntegralReportes_FechaHoraCarga
+- Dshd.VW_BI_CSL_IntegralReportes_RealTime
+- Dshd.VW_BI_EstatusAjustador_PosicionAjustador
 
 ### Tablas
