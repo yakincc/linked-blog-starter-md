@@ -35,6 +35,15 @@
 
 ### \[CSL] - Traslado por Reporte 
 #### Vistas
-- 
-
+-  Dshd.VW_BI_CSL_IntegralReportes_RealTime 
+- Dshd.VW_DWH_CSL_RepSeguimientoTraslado_RealTime
 #### Tablas
+- DWH.Tb_bi_GrlSinComentariosvivo
+
+### \[CSL] - Visor de distancias por reporte
+
+#### Vistas
+- Dshd.VW_BI_CSL_IntegralReportes_RealTime 
+- Dshd.VW_BI_CLS_Distancias_ReportesSinAsignar_Vs_Ajustadores
+#### Tablas
+- DWH.Tb_bi_GrlSinComentariosvivo
