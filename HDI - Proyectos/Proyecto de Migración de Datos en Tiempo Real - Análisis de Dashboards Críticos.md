@@ -62,13 +62,3 @@
 
 #### Tablas
 - TB_BI_DimOficina
-
-
-## Resumen de Fuentes en Tiempo Real
-
-### Vistas
-- Dshd.VW_BI_CLS_IntegralReportes_FechaHoraCarga
-- Dshd.VW_BI_CSL_IntegralReportes_RealTime
-- Dshd.VW_BI_EstatusAjustador_PosicionAjustador
-
-### Tablas
