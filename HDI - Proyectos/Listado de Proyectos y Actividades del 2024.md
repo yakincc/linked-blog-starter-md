@@ -1,5 +1,5 @@
 
 - Desarrollo de un sistema automatizado con Inteligencia Artificial para determinar la ubicación estratégica óptima de posicionamiento de ajustadores, maximizando la cobertura de siniestros y reduciendo los tiempos de arribo promedio.
 - Modificación, Adecuación e Integración de Dashboards de Monitoreo a Áreas de Trabajo en Power Bi: Entregas, Reparaciones.
-- Realización de Análisis de Datos para diversas tareas: Detectar Impacto de Fallas en el Sistema UNO, verificar la distribución de encuestas del NPS y determinar estadísticamente ajustadores con proporción anormal de siniestros fuera de horario, entre otras.
+- Realización de Análisis de Datos para diversas tareas: Detectar Impacto de fallas en el sistema UNO, verificar la distribución de encuestas del NPS y determinar estadísticamente ajustadores con proporción anormal de siniestros fuera de horario.
 - Implementación de un pipeline de datos reutilizable que permita hacer cargas hacia las Bases de Datos mediante una interfaz gráfica simple, para integrarlo a procesos existentes de acuerdo con los requerimientos de Seguridad de Datos.
