@@ -1,4 +1,4 @@
 
 - Desarrollo de un sistema automatizado con Inteligencia Artificial para determinar la ubicación estratégica óptima de posicionamiento de ajustadores, maximizando la cobertura de siniestros y reduciendo los tiempos de arribo promedio.
-- Implementación de un pipeline de datos reutilizable que permita hacer cargas y descargas desde y hacia las Bases de Datos mediante una interfaz gráfica simple.
-- 
+- Modificación, Adecuación e Integración de Dashboards de Monitoreo a Áreas de Trabajo en Power Bi: Entregas, Reparaciones, 
+- Implementación de un pipeline de datos reutilizable que permita hacer cargas y descargas desde y hacia las Bases de Datos mediante una interfaz gráfica simple, para integrarlo a procesos existentes de acuerdo con los requerimientos de Seguridad de Datos.,
