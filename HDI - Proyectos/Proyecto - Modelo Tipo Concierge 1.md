@@ -50,7 +50,7 @@ No contempla (por el momento):
 Para la creación y entrenamiento del “Modelo Tipo Concierge”, se han de seguir los siguientes pasos:
 
 1. **Recolección de Datos**  
-   - **ClienteUnico.TB_DWH_GrlPrimaVigentexOficinaAgente (Sybase)**:  
+   - **ClienteUnico.TB_DWH_GrlPrimaVigentexOficinaAgente**:  Información de clientes vigentes
      - Prima Neta Total  
      - Edad  
      - Antigüedad  
