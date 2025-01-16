@@ -7,6 +7,8 @@ El proyecto del Modelo Tipo Concierge fue desarrollado con la idea de proveer un
 A partir de esta información, se pretende realizar un modelo de regresión que permita calcular un puntaje de prioridad, para priorizar la atención de aquellos clientes importantes y/o en riesgo de dar una mala reseña, con lo que efectivamente se pretende reducir la cantidad de encuestas con un NPS bajo, al tiempo que se asegura que los clientes de mayor importancia para la compañía dado su historial, permanezcan y recomienden a la compañía.
 
 Hasta este momento, Se tiene ya el primer bosquejo de la segmentación de clientes para personas físicas con póliza individual a partir de sus características. En general, la información de mayor relevancia es extraída de las siguientes fuentes:
-- ClienteUnico.TB_DWH_GrlPrimaVigentexOficinaAgente - Listado de información de Clientes Vigentes extraido desde Sybase. De aquí se extraen las siguientes características relevantes para el mo
+- ClienteUnico.TB_DWH_GrlPrimaVigentexOficinaAgente - Listado de información de Clientes Vigentes extraido desde Sybase. De aquí se extraen las siguientes características relevantes para el modelo:
+	- Prima Neta
+	- Persona POl
 
 
