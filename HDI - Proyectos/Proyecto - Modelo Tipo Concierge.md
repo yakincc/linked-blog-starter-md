@@ -9,7 +9,8 @@ Para la elaboración de este modelo se contemplan tres fuentes de información p
    - Historial de interacciones previas con la compañía.  
    
    Orígenes en la base de datos:
-   - ClienteUnico.TB_DWH
+   - ClienteUnico.TB_DWH_GrlPrimaVigentexOficinaAgente
+   - 
    
 
 2. **Características del Vehículo**  
