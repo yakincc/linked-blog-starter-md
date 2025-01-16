@@ -7,7 +7,8 @@ Para la elaboración de este modelo se contemplan tres fuentes de información p
 1. **Perfil Demográfico y Historial del Cliente**  
    - Características demográficas.  
    - Historial de interacciones previas con la compañía.  
-   - Modelo de segmentación para determinar la probabilidad de reseñas negativas.  
+   
+   
 
 2. **Características del Vehículo**  
    - Segmentación con base en el tipo de póliza.  
