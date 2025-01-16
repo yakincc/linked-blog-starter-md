@@ -13,6 +13,8 @@ Hasta este momento, Se tiene ya el primer bosquejo de la segmentación de client
 	- Antigüedad
 	- Ocupación
 	- Estado Civil
-	- 
+
+- expcliente.hdi_cucrudo en Snowflake: 
+
 
 
