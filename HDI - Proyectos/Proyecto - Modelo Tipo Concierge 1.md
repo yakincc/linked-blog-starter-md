@@ -41,31 +41,15 @@ Este proyecto se limita a:
 - Datos de siniestros, pólizas, emisiones y NPS, como se especifica en la sección de Metodología.
 
 No considera actualmente:
-- Otras líneas de negocio (salud, vida, etc.).
+- Otras líneas de negocio (Salud, Autos Turistas, etc.).
 - Clientes con flotillas o personas morales.
-- Evaluar en detalle los centros de reparación que no estén integrados en las bases de datos corporativas.
 
 ---
 
 ## 5. Metodología
 Para la creación y entrenamiento del “Modelo Tipo Concierge”, se deben seguir estos pasos:
 
-1. **Recolección de Datos**  
-   - **ClienteUnico.TB_DWH_GrlPrimaVigentexOficinaAgente** (Sybase):  
-     - Prima Neta Total  
-     - Edad  
-     - Antigüedad  
-     - Ocupación  
-     - Estado Civil  
-   - **expcliente.hdi_cucrudo** (Snowflake):  
-     - Primas pagadas en Auto o Daños  
-     - Totales de siniestros (Auto o Daños)  
-   - **TB_DWH_MedicionNPSAutos_Reparacion**:  
-     - Información del NPS de la compañía (tabla objetivo)  
-   - **DWH.Tb_BI_GrlSinReporte**:  
-     - Historial de reportes de siniestros  
-   - **TB_BI_AutrFactEmisionDoc**:  
-     - Documentos de emisión y cotizaciones  
+1. **Recolección de Datos**: Desde la base de datos. Es quizás la parte más complicada y tardada del proyecto. Hasta el momento se tiene una buena 
 
 2. **Segmentación de Clientes**  
    - Estimar probabilidad de reseña negativa (posible NPS).  
