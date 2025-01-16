@@ -8,7 +8,11 @@ A partir de esta información, se pretende realizar un modelo de regresión que 
 
 Hasta este momento, Se tiene ya el primer bosquejo de la segmentación de clientes para personas físicas con póliza individual a partir de sus características. En general, la información de mayor relevancia es extraída de las siguientes fuentes:
 - ClienteUnico.TB_DWH_GrlPrimaVigentexOficinaAgente - Listado de información de Clientes Vigentes extraido desde Sybase. De aquí se extraen las siguientes características relevantes para el modelo:
-	- Prima Neta
-	- Persona POl
+	- Prima Neta Total
+	- Edad
+	- Antigüedad
+	- Ocupación
+	- Estado Civil
+	- 
 
 
