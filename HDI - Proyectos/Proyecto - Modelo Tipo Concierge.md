@@ -1,5 +1,5 @@
 # Introducción  
-El proyecto denominado “Modelo de Concierge” fue concebido con el objetivo de asignar a los clientes del área de reparaciones un puntaje de riesgo que refleje la probabilidad de que emitan una reseña negativa sobre su experiencia. Este puntaje facilita la priorización de atención de los clientes con mayor riesgo y, de esta forma, contribuye a mejorar la satisfacción global del cliente y reducir la incidencia de comentarios adversos.
+El proyecto denominado “Modelo de Concierge” fue concebido con el objetivo de asignar a los clientes del área de reparaciones un puntaje de prioridad, que refleje la probabilidad de que emitan una reseña negativa sobre su experiencia. Este puntaje facilita la priorización de atención de los clientes con mayor riesgo y, de esta forma, contribuye a mejorar la satisfacción global del cliente y reducir la incidencia de comentarios adversos.
 
 ## Fuentes de información  
 Para la elaboración de este modelo se contemplan tres fuentes de información principales:  
