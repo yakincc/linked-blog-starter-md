@@ -20,7 +20,11 @@ Hasta este momento, Se tiene ya el primer bosquejo de la segmentación de client
 - DWH.Tb_BI_GrlSinReporte - Tiene el concentrado de reportes de siniestros ocurridos. 
 - TB_BI_AutrFactEmisionDoc - Concentrado de documentos de emisión y cotizaciones.
 
-Se tiene también un primer acercamiento a la segmentación por vehículos, aunque esta produce clusters mayormente influenciados por la marca y el modelo del vehículo. Tiene sentido, pero habría que hacer mayor trabajo al respecto, y en el caso de Flotillas hay una sobrerrepresentación 
+Se tiene también un primer acercamiento a la segmentación por vehículos, aunque esta produce clusters mayormente influenciados por la marca y el modelo del vehículo. Tiene sentido, pero habría que hacer mayor trabajo al respecto. Así mismo, a día de hoy no tenemos forma de definir cuales vehículos tienen una póliza vigente o no.
+
+Faltaría hacer la vinculación entre vehículos y reparaciones, para poder ver cómo afecta el tipo de vehículo y el centro de reparación en el NPS, y sobre esto, construir el modelo que asigne el puntaje de prioridad.
+
+
 
 
 
