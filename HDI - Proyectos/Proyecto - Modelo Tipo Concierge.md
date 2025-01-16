@@ -8,6 +8,8 @@ Para la elaboración de este modelo se contemplan tres fuentes de información p
    - Características demográficas.  
    - Historial de interacciones previas con la compañía.  
    
+   Orígenes en la base de datos:
+   - ClienteUnico.TB_DWH
    
 
 2. **Características del Vehículo**  
