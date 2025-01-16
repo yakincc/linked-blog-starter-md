@@ -1,6 +1,6 @@
 # Informe de Proyecto: Modelo Tipo Concierge
 
-## 1. Resumen Ejecutivo
+## 1. Resumen
 El proyecto “Modelo Tipo Concierge” surge con la finalidad de asignar a los clientes del área de reparaciones de la compañía un puntaje que refleje el nivel de prioridad de atención. Este puntaje se basa en factores como las características demográficas del cliente, el tipo de vehículo y detalles de la reparación, con el objetivo de reducir las probabilidades de obtener un Net Promoter Score (NPS) bajo. 
 
 Adicionalmente, se busca garantizar que aquellos clientes más importantes para la compañía, en términos de valor e historial, reciban un servicio prioritario y, con ello, se promueva su fidelidad y recomendación. Hasta el momento se cuenta con un primer bosquejo de segmentación para clientes con póliza individual, así como un acercamiento preliminar a la segmentación por vehículos.
@@ -47,7 +47,7 @@ No contempla (por el momento):
 ---
 
 ## 5. Metodología
-Para la creación y entrenamiento del “Modelo Tipo Concierge”, se seguirán los siguientes pasos:
+Para la creación y entrenamiento del “Modelo Tipo Concierge”, se han de seguir los siguientes pasos:
 
 1. **Recolección de Datos**  
    - **ClienteUnico.TB_DWH_GrlPrimaVigentexOficinaAgente (Sybase)**:  
@@ -56,7 +56,7 @@ Para la creación y entrenamiento del “Modelo Tipo Concierge”, se seguirán 
      - Antigüedad  
      - Ocupación  
      - Estado Civil  
-   - **expcliente.hdi_cucrudo (Snowflake)**:  
+   -  (Snowflake)**:  
      - Primas pagadas en Auto o Daños  
      - Totales de siniestros ocurridos en Auto o Daños  
    - **TB_DWH_MedicionNPSAutos_Reparacion**:  
@@ -83,17 +83,17 @@ Para la creación y entrenamiento del “Modelo Tipo Concierge”, se seguirán 
 
 ---
 
-## 6. Plan de Trabajo y Cronograma
+## 6. Plan de Trabajo
 
-| Etapa                                    | Descripción                                                                        | Responsable     | Estado      |
-| ---------------------------------------- | ---------------------------------------------------------------------------------- | --------------- | ----------- |
-| **1. Recolección de Datos**              | Recolectar datos de Data Warehouse, Snowflake y otras fuentes                      | Uriel Dominguez | En proceso  |
-| **2. Segmentación de Clientes**          | Definir perfiles y clusters en función de NPS y valor                              | Uriel Dominguez | Terminado   |
-| **3. Segmentación de Vehículos**         | Definir perfiles y clusters en función del NPS y vehículo                          | -               | En proceso  |
-| **4. Vinculación Vehículo-Reparaciones** | Integrar los registros de reparación con la información de vehículos y NPS         | -               | Por Iniciar |
-| **5. Diseño del Modelo de Regresión**    | Crear, entrenar y ajustar el modelo de puntaje de prioridad                        | -               | Por Iniciar |
-| **6. Validación Piloto**                 | Realizar pruebas preliminares en un entorno controlado y obtener retroalimentación | -               | Por Iniciar |
-| **7. Implementación Final**              | Desplegar el modelo en entorno productivo                                          | -               | Por Iniciar |
+| Etapa                                    | Descripción                                                                            | Responsable     | Estado      |
+| ---------------------------------------- | -------------------------------------------------------------------------------------- | --------------- | ----------- |
+| **1. Recolección de Datos**              | Recolectar datos de Data Warehouse, Snowflake y otras fuentes                          | Uriel Dominguez | En proceso  |
+| **2. Segmentación de Clientes**          | Definir perfiles y clusters en función de NPS y valor                                  | Uriel Dominguez | Terminado   |
+| **3. Segmentación de Vehículos**         | Definir perfiles y clusters en función del NPS y vehículo                              | -               | En proceso  |
+| **4. Vinculación Vehículo-Reparaciones** | Integrar los registros de reparación y valuación con la información de vehículos y NPS | -               | Por Iniciar |
+| **5. Diseño del Modelo de Regresión**    | Crear, entrenar y ajustar el modelo de puntaje de prioridad                            | -               | Por Iniciar |
+| **6. Validación Piloto**                 | Realizar pruebas preliminares en un entorno controlado y obtener retroalimentación     | -               | Por Iniciar |
+| **7. Implementación Final**              | Desplegar el modelo en entorno productivo, integrándolo con los visores pertinentes    | -               | Por Iniciar |
 
 
 ---
@@ -101,24 +101,13 @@ Para la creación y entrenamiento del “Modelo Tipo Concierge”, se seguirán 
 ## 8. Análisis y Resultados (Estado Actual)
 - Ya se cuenta con **un primer bosquejo de segmentación** para clientes personas físicas con póliza individual.  
 - Se ha obtenido información relevante sobre **prima neta, edad, antigüedad, ocupación y estado civil**, que sientan las bases para estimar la probabilidad de recibir una reseña negativa o un NPS bajo.  
-- En la **segmentación de vehículos**, se han identificado patrones de marca y modelo, aunque todavía es necesario profundizar para correlacionar el estado de la póliza y la vigencia de la cobertura.  
+- En la **segmentación de vehículos**, se han identificado patrones de marca y modelo, aunque todavía es necesario profundizar para correlacionar el estado de la póliza y la vigencia de la cobertura, así como incluir los datos de las reparaciones en el modelo.
 
 ---
 
 ## 11. Próximos Pasos
-- **Asegurar la integridad y disponibilidad de los datos**: Analizar el proceso manual de llenado de 
-- **Completar la segmentación de vehículos**: Incluir la información de vigencia de póliza y registro de reparaciones.  
+- **Asegurar la integridad y disponibilidad de los datos**: Analizar el proceso manual de llenado de expcliente.hdi_cucrudo y llevarlo al Data Warehouse.
+- **Completar la segmentación de vehículos**: Incluir la información de registro de reparaciones y vinculación con el NPS.  
 - **Diseñar la fase de validación**: Probar el modelo de regresión y ajustar los parámetros según los resultados obtenidos.  
 - **Desarrollar un plan de despliegue**: Definir cómo se integrará el puntaje de prioridad en el flujo de trabajo del área de reparaciones.  
 - **Monitorear y mejorar**: Establecer indicadores clave (KPIs) para medir la eficacia del modelo y proponer mejoras continuas.  
-
----
-
-## 12. Anexos o Apéndices
-- **Diccionarios de datos** de cada tabla mencionada (Sybase y Snowflake).  
-- **Documentación técnica** de las herramientas de análisis y modelado utilizadas.  
-- **Diagramas de flujo** de los procesos de reparaciones y atención al cliente.
-
----
-
-
