@@ -95,7 +95,30 @@ Para la creación y entrenamiento del “Modelo Tipo Concierge”, se seguirán 
 | **6. Validación Piloto**                 | Realizar pruebas preliminares en un entorno controlado y obtener retroalimentación | -               | Por Iniciar |
 | **7. Implementación Final**              | Desplegar el modelo en entorno productivo                                          | -               | Por Iniciar |
 
+
 ---
 
-## 7. Consideraciones Finales
+## 8. Análisis y Resultados (Estado Actual)
+- Ya se cuenta con **un primer bosquejo de segmentación** para clientes personas físicas con póliza individual.  
+- Se ha obtenido información relevante sobre **prima neta, edad, antigüedad, ocupación y estado civil**, que sientan las bases para estimar la probabilidad de recibir una reseña negativa o un NPS bajo.  
+- En la **segmentación de vehículos**, se han identificado patrones de marca y modelo, aunque todavía es necesario profundizar para correlacionar el estado de la póliza y la vigencia de la cobertura.  
+
+---
+
+## 11. Próximos Pasos
+- **Asegurar la integridad y disponibilidad de los datos**: Analizar el proceso manual de llenado de 
+- **Completar la segmentación de vehículos**: Incluir la información de vigencia de póliza y registro de reparaciones.  
+- **Diseñar la fase de validación**: Probar el modelo de regresión y ajustar los parámetros según los resultados obtenidos.  
+- **Desarrollar un plan de despliegue**: Definir cómo se integrará el puntaje de prioridad en el flujo de trabajo del área de reparaciones.  
+- **Monitorear y mejorar**: Establecer indicadores clave (KPIs) para medir la eficacia del modelo y proponer mejoras continuas.  
+
+---
+
+## 12. Anexos o Apéndices
+- **Diccionarios de datos** de cada tabla mencionada (Sybase y Snowflake).  
+- **Documentación técnica** de las herramientas de análisis y modelado utilizadas.  
+- **Diagramas de flujo** de los procesos de reparaciones y atención al cliente.
+
+---
+
 
