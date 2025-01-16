@@ -7,6 +7,7 @@ El proyecto del Modelo Tipo Concierge fue desarrollado con la idea de proveer un
 A partir de esta información, se pretende realizar un modelo de regresión que permita calcular un puntaje de prioridad, para priorizar la atención de aquellos clientes importantes y/o en riesgo de dar una mala reseña, con lo que efectivamente se pretende reducir la cantidad de encuestas con un NPS bajo, al tiempo que se asegura que los clientes de mayor importancia para la compañía dado su historial, permanezcan y recomienden a la compañía.
 
 Hasta este momento, Se tiene ya el primer bosquejo de la segmentación de clientes para personas físicas con póliza individual a partir de sus características. En general, la información de mayor relevancia es extraída de las siguientes fuentes:
+
 - ClienteUnico.TB_DWH_GrlPrimaVigentexOficinaAgente - Listado de información de Clientes Vigentes extraido desde Sybase. De aquí se extraen las siguientes características relevantes para el modelo:
 	- Prima Neta Total
 	- Edad
@@ -14,7 +15,16 @@ Hasta este momento, Se tiene ya el primer bosquejo de la segmentación de client
 	- Ocupación
 	- Estado Civil
 
-- expcliente.hdi_cucrudo en Snowflake - Obtiene la información de las primas pagadas en Auto o en Daños, y los totales ocur
+- expcliente.hdi_cucrudo en Snowflake - Obtiene la información de las primas pagadas en Auto o en Daños, y los totales ocurridos en auto o en daños.
+- TB_DWH_MedicionNPSAutos_Reparacion - Contiene la información del NPS de la empresa. Esta tabla es la tabla objetivo de la puntuación por cliente.
+- DWH.Tb_BI_GrlSinReporte - Tiene el concentrado de reportes de siniestros ocurridos. 
+- TB_BI_AutrFactEmisionDoc - Concentrado de documentos de emisión y cotizaciones.
+
+Faltaría por completar la 
+
+
+
+
 
 
 
