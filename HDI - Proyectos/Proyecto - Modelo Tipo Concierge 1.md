@@ -68,7 +68,7 @@ Para la creación y entrenamiento del “Modelo Tipo Concierge”, se seguirán 
 
 2. **Segmentación del Cliente**  
    - Agrupar clientes de acuerdo con su probabilidad de reseña negativa (por medio de un posible NPS).  
-   - Determinar importancia monetaria del cliente (basado en póliza, siniestros, valor asegurado, etc.).  
+   - Determinar importancia monetaria del cliente con un modelo de clusterización(basado en póliza, siniestros, valor asegurado, etc.).  
 
 3. **Segmentación del Vehículo**  
    - Clasificación inicial basada en marca y modelo.  
@@ -85,30 +85,17 @@ Para la creación y entrenamiento del “Modelo Tipo Concierge”, se seguirán 
 
 ## 6. Plan de Trabajo y Cronograma
 
-| Etapa                                   | Descripción                                                 | Fecha de Inicio | Fecha de Fin  | Responsable            |
-|-----------------------------------------|-------------------------------------------------------------|-----------------|---------------|------------------------|
-| **1. Recolección de Datos**            | Consolidar datos de Sybase, Snowflake y otras fuentes       | [Fecha]         | [Fecha]       | Equipo de BI          |
-| **2. Segmentación de Clientes**         | Definir perfiles y clusters en función de NPS y valor       | [Fecha]         | [Fecha]       | Área de Análisis      |
-| **3. Segmentación de Vehículos**        | Profundizar en el modelo de vehículos y su vigencia         | [Fecha]         | [Fecha]       | Equipo de Data Science|
-| **4. Vinculación Vehículo-Reparaciones**| Integrar los registros de reparación con la información     | [Fecha]         | [Fecha]       | Equipo de Data Science|
-| **5. Diseño del Modelo de Regresión**   | Crear, entrenar y ajustar el modelo de puntaje de prioridad | [Fecha]         | [Fecha]       | Líder de Proyecto     |
-| **6. Validación Piloto**               | Realizar pruebas con datos reales y obtener retroalimentación | [Fecha]       | [Fecha]       | Equipo de QA          |
-| **7. Implementación Final**            | Desplegar el modelo en entorno productivo                   | [Fecha]         | [Fecha]       | Equipo de TI          |
+| Etapa                                    | Descripción                                                                        | Responsable     | Estado      |
+| ---------------------------------------- | ---------------------------------------------------------------------------------- | --------------- | ----------- |
+| **1. Recolección de Datos**              | Recolectar datos de Data Warehouse, Snowflake y otras fuentes                      | Uriel Dominguez | En proceso  |
+| **2. Segmentación de Clientes**          | Definir perfiles y clusters en función de NPS y valor                              | Uriel Dominguez | Terminado   |
+| **3. Segmentación de Vehículos**         | Definir perfiles y clusters en función del NPS y vehículo                          | -               | En proceso  |
+| **4. Vinculación Vehículo-Reparaciones** | Integrar los registros de reparación con la información de vehículos y NPS         | -               | Por Iniciar |
+| **5. Diseño del Modelo de Regresión**    | Crear, entrenar y ajustar el modelo de puntaje de prioridad                        | -               | Por Iniciar |
+| **6. Validación Piloto**                 | Realizar pruebas preliminares en un entorno controlado y obtener retroalimentación | -               | Por Iniciar |
+| **7. Implementación Final**              | Desplegar el modelo en entorno productivo                                          | -               | Por Iniciar |
 
 ---
 
-## 7. Requerimientos
+## 7. Consideraciones Finales
 
-1. **Recursos Humanos**  
-   - Analistas de datos con experiencia en segmentación.  
-   - Equipo de BI para la extracción y transformación de datos.  
-   - Equipo de TI para la integración del modelo en los sistemas actuales.  
-
-2. **Recursos Tecnológicos**  
-   - Acceso a los sistemas de Sybase, Snowflake y otras bases de datos corporativas.  
-   - Herramientas de análisis estadístico y modelos de regresión (ej. Python, R).  
-   - Infraestructura para pruebas e implementación (servidores, entornos de desarrollo).  
-
-3. **Recursos Financieros**  
-   - Presupuesto para costos de licencias de software o herramientas adicionales (si aplica).  
-   - Posibles gastos de consultoría especia
