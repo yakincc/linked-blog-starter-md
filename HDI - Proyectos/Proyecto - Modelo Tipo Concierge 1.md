@@ -1,0 +1,114 @@
+# Informe de Proyecto: Modelo Tipo Concierge
+
+## 1. Resumen Ejecutivo
+El proyecto “Modelo Tipo Concierge” surge con la finalidad de asignar a los clientes del área de reparaciones de la compañía un puntaje que refleje el nivel de prioridad de atención. Este puntaje se basa en factores como las características demográficas del cliente, el tipo de vehículo y detalles de la reparación, con el objetivo de reducir las probabilidades de obtener un Net Promoter Score (NPS) bajo. 
+
+Adicionalmente, se busca garantizar que aquellos clientes más importantes para la compañía, en términos de valor e historial, reciban un servicio prioritario y, con ello, se promueva su fidelidad y recomendación. Hasta el momento se cuenta con un primer bosquejo de segmentación para clientes con póliza individual, así como un acercamiento preliminar a la segmentación por vehículos.
+
+---
+
+## 2. Antecedentes
+El área de reparaciones de la compañía recibe a diario numerosos clientes con necesidades y urgencias diversas. Sin embargo, no existe un mecanismo estandarizado para determinar cuál de estos clientes debería recibir una atención prioritaria basada en:
+1. Su probabilidad de dejar una reseña negativa (impactando el NPS).
+2. Su valor estratégico (en términos de póliza y relación a largo plazo).
+
+Para solventar esta situación, se inició el desarrollo de un modelo de Concierge que asigna un puntaje de prioridad a cada cliente, considerando tres principales fuentes de información:
+- **Perfil Demográfico e Historial del Cliente** (incluyendo probabilidad de reseña negativa a partir de su segmento y NPS potencial).
+- **Características del Vehículo y de la Póliza** (importancia monetaria del cliente).
+- **Datos de la Reparación** (centro, cantidad de piezas, costo de refacciones, etc.).
+
+Este proyecto se encuentra en una fase preliminar, con un primer bosquejo de segmentación para personas físicas con póliza individual y un acercamiento inicial para la segmentación de vehículos.
+
+---
+
+## 3. Objetivos
+
+### 3.1 Objetivo General
+Desarrollar un modelo de regresión que calcule un puntaje de prioridad, para así priorizar la atención de clientes que presenten alto riesgo de emitir una reseña negativa y/o sean de gran valor para la compañía.
+
+### 3.2 Objetivos Específicos
+- Reducir la proporción de encuestas con NPS bajo.
+- Identificar y fidelizar a los clientes más valiosos para la compañía.
+- Integrar y consolidar datos de diferentes fuentes para la creación de un modelo robusto.
+- Establecer un flujo de trabajo que aproveche el puntaje de prioridad en la operación diaria de reparaciones.
+
+---
+
+## 4. Alcance del Proyecto
+El alcance del proyecto se limita a:
+- Clientes con póliza individual en el ramo de automóviles.
+- Datos relevantes de siniestros, pólizas, emisiones y NPS, según se encuentran registrados en las tablas y sistemas detallados en la sección de Metodología.
+  
+No contempla (por el momento):
+- Integrar pólizas de otros ramos (salud, vida, etc.).
+- Clientes con flotillas o personas morales.
+- Analizar en profundidad los centros de reparación externos que no tengan registros en las fuentes de datos disponibles.
+
+---
+
+## 5. Metodología
+Para la creación y entrenamiento del “Modelo Tipo Concierge”, se seguirán los siguientes pasos:
+
+1. **Recolección de Datos**  
+   - **ClienteUnico.TB_DWH_GrlPrimaVigentexOficinaAgente (Sybase)**:  
+     - Prima Neta Total  
+     - Edad  
+     - Antigüedad  
+     - Ocupación  
+     - Estado Civil  
+   - **expcliente.hdi_cucrudo (Snowflake)**:  
+     - Primas pagadas en Auto o Daños  
+     - Totales de siniestros ocurridos en Auto o Daños  
+   - **TB_DWH_MedicionNPSAutos_Reparacion**:  
+     - Información del NPS de la compañía (tabla objetivo)  
+   - **DWH.Tb_BI_GrlSinReporte**:  
+     - Historial de reportes de siniestros  
+   - **TB_BI_AutrFactEmisionDoc**:  
+     - Información de documentos de emisión y cotizaciones  
+
+2. **Segmentación del Cliente**  
+   - Agrupar clientes de acuerdo con su probabilidad de reseña negativa (por medio de un posible NPS).  
+   - Determinar importancia monetaria del cliente (basado en póliza, siniestros, valor asegurado, etc.).  
+
+3. **Segmentación del Vehículo**  
+   - Clasificación inicial basada en marca y modelo.  
+   - Trabajo pendiente para determinar cuáles vehículos tienen póliza vigente.  
+
+4. **Vinculación Vehículo-Reparaciones**  
+   - Relacionar los datos de las reparaciones y valuaciones con los vehículos para analizar el impacto en el NPS.  
+
+5. **Diseño e Implementación del Modelo de Regresión**  
+   - Entrenamiento del modelo con la información consolidada.  
+   - Validación y ajuste del puntaje de prioridad.  
+
+---
+
+## 6. Plan de Trabajo y Cronograma
+
+| Etapa                                   | Descripción                                                 | Fecha de Inicio | Fecha de Fin  | Responsable            |
+|-----------------------------------------|-------------------------------------------------------------|-----------------|---------------|------------------------|
+| **1. Recolección de Datos**            | Consolidar datos de Sybase, Snowflake y otras fuentes       | [Fecha]         | [Fecha]       | Equipo de BI          |
+| **2. Segmentación de Clientes**         | Definir perfiles y clusters en función de NPS y valor       | [Fecha]         | [Fecha]       | Área de Análisis      |
+| **3. Segmentación de Vehículos**        | Profundizar en el modelo de vehículos y su vigencia         | [Fecha]         | [Fecha]       | Equipo de Data Science|
+| **4. Vinculación Vehículo-Reparaciones**| Integrar los registros de reparación con la información     | [Fecha]         | [Fecha]       | Equipo de Data Science|
+| **5. Diseño del Modelo de Regresión**   | Crear, entrenar y ajustar el modelo de puntaje de prioridad | [Fecha]         | [Fecha]       | Líder de Proyecto     |
+| **6. Validación Piloto**               | Realizar pruebas con datos reales y obtener retroalimentación | [Fecha]       | [Fecha]       | Equipo de QA          |
+| **7. Implementación Final**            | Desplegar el modelo en entorno productivo                   | [Fecha]         | [Fecha]       | Equipo de TI          |
+
+---
+
+## 7. Requerimientos
+
+1. **Recursos Humanos**  
+   - Analistas de datos con experiencia en segmentación.  
+   - Equipo de BI para la extracción y transformación de datos.  
+   - Equipo de TI para la integración del modelo en los sistemas actuales.  
+
+2. **Recursos Tecnológicos**  
+   - Acceso a los sistemas de Sybase, Snowflake y otras bases de datos corporativas.  
+   - Herramientas de análisis estadístico y modelos de regresión (ej. Python, R).  
+   - Infraestructura para pruebas e implementación (servidores, entornos de desarrollo).  
+
+3. **Recursos Financieros**  
+   - Presupuesto para costos de licencias de software o herramientas adicionales (si aplica).  
+   - Posibles gastos de consultoría especia
