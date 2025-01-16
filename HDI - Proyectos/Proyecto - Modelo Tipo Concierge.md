@@ -14,7 +14,7 @@ Hasta este momento, Se tiene ya el primer bosquejo de la segmentación de client
 	- Ocupación
 	- Estado Civil
 
-- expcliente.hdi_cucrudo en Snowflake - Obtiene la información de 
+- expcliente.hdi_cucrudo en Snowflake - Obtiene la información de las primas pagadas en Auto o en Daños, y los totales ocur
 
 
 
