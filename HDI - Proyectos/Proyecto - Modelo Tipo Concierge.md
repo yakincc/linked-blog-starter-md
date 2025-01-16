@@ -1,5 +1,5 @@
 # Introducción  
-El proyecto denominado “Modelo de Concierge” fue concebido con el objetivo de asignar a los clientes del área de reparaciones un puntaje de prioridad, que refleje la probabilidad de que emitan una reseña negativa sobre su experiencia. Este puntaje facilita la priorización de atención de los clientes con mayor riesgo y, de esta forma, contribuye a mejorar la satisfacción global del cliente y reducir la incidencia de comentarios adversos.
+El proyecto denominado “Modelo de Concierge” fue concebido con el objetivo de asignar a los clientes del área de reparaciones un puntaje de prioridad, que refleje una probabilidad conjunta de dos variables: La probabilidad . Este puntaje facilita la priorización de atención de los clientes con mayor riesgo y, de esta forma, contribuye a mejorar la satisfacción global del cliente y reducir la incidencia de comentarios adversos.
 
 ## Fuentes de información  
 Para la elaboración de este modelo se contemplan tres fuentes de información principales:  
@@ -54,5 +54,3 @@ Actualmente, **nos encontramos en la Etapa 2** (Diseño del modelo), establecien
 - Es fundamental mantener la **calidad de los datos**: información incompleta o inexacta puede afectar la eficacia del modelo.  
 - El **análisis ético y de cumplimiento** de la segmentación de clientes debe considerarse para evitar sesgos o prácticas discriminatorias.  
 - Se recomienda realizar **informes periódicos** de los avances y resultados para garantizar la transparencia y el alineamiento con los objetivos de la empresa.  
-
-Para cualquier duda o requerimiento adicional, no duden en contactarme. Este reporte tiene como fin principal informar y facilitar la toma de decisiones estratégicas, asegurando que el proyecto se realice de forma eficiente y alineada con las metas de la organización.
