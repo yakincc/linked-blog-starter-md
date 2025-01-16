@@ -1,10 +1,54 @@
+# Introducción  
+El proyecto denominado “Modelo de Concierge” fue concebido con el objetivo de asignar a los clientes del área de reparaciones un puntaje de riesgo que refleje la probabilidad de que emitan una reseña negativa sobre su experiencia. Este puntaje facilita la priorización de atención de los clientes con mayor riesgo y, de esta forma, contribuye a mejorar la satisfacción global del cliente y reducir la incidencia de comentarios adversos.
 
+## Fuentes de información  
+Para la elaboración de este modelo se contemplan tres fuentes de información principales:  
 
-# Introducción
-El proyecto del Modelo Tipo Concierge fue desarrollado con la idea de proveer una forma de otorgar a los clientes del área de reparaciones de la compañía un puntaje que indique el riesgo de que algún cliente pueda o no dejar una mala reseña de su reparación, y buscar priorizar la atención de acuerdo con este puntaje. De acuerdo con el planteamiento del proyecto, la puntuación de prioridad del modelo de concierge se basa en 3 origenes distintos:
+1. **Perfil Demográfico y Historial del Cliente**  
+   - Características demográficas.  
+   - Historial de interacciones previas con la compañía.  
+   - Modelo de segmentación para determinar la probabilidad de reseñas negativas.  
 
-1. El grupo demográfico del cliente y su historial, que a partir de un modelo de segmentación desde los datos generales del cliente permita indicar qué tan probable es una reseña mala de acuerdo con sus características.
-2. El vehículo del cliente, que a partir de un modelo de segmentación de las características del vehículo y de la póliza permita indicar qué tan probable es una reseña mala de acuerdo con sus características.
-3. Los datos de la reparación del vehículo: El centro de Reparación al que se envía, la cantidad de piezas a reparar, el costo de refacciones, etc, 
+2. **Características del Vehículo**  
+   - Segmentación con base en el tipo de póliza.  
+   - Historial de reparaciones previas.  
+   - Atributos específicos del modelo de vehículo.  
 
-A partir de esta información, se pretende realizar un modelo de regresión que permita calcular un puntaje de riesgo, para priorizar la atención de aquellos clientes de riesgo y evitar una mala reseña de su parte. 
+3. **Datos de la Reparación**  
+   - Centro de reparación asignado.  
+   - Cantidad y tipo de piezas a reparar.  
+   - Costo de refacciones y otros elementos asociados.  
+
+Con base en la información descrita, se desarrollará un **modelo de regresión** para calcular un **puntaje de riesgo** que oriente la asignación de recursos y la atención prioritaria para los clientes con mayor probabilidad de emitir reseñas negativas.
+
+---
+
+# Requerimientos y Próximos Pasos  
+1. **Recolección de datos**: Consolidar la información de los clientes (historial y demografía), vehículos (características y pólizas) y reparaciones (centros de atención, tiempos y costos).  
+2. **Diseño y entrenamiento del modelo**: Implementar un modelo de regresión capaz de generar un puntaje de riesgo para cada cliente.  
+3. **Validación y ajustes**: Verificar la precisión del modelo y, de ser necesario, ajustar parámetros para incrementar su fiabilidad.  
+4. **Integración con el flujo operativo**: Incluir el puntaje en el proceso de atención para que el personal identifique a los clientes de alto riesgo y canalice recursos de manera efectiva.  
+
+---
+
+# Avance del Proyecto  
+
+| Etapa                                   | Descripción                                             | Estado          |
+|-----------------------------------------|---------------------------------------------------------|-----------------|
+| **1. Recolección de datos**            | Agrupación y limpieza de la información necesaria       | Completado      |
+| **2. Diseño del modelo**               | Definición de algoritmos y parámetros principales       | *En progreso*   |
+| **3. Entrenamiento y validación**      | Entrenamiento del modelo y revisión de resultados       | Pendiente       |
+| **4. Implementación piloto**           | Prueba operativa en un entorno controlado               | Pendiente       |
+| **5. Evaluación y ajustes**            | Revisión y mejora continua del modelo y su aplicación   | Pendiente       |
+| **6. Puesta en marcha**                | Integración total en el proceso de la compañía          | Pendiente       |
+
+Actualmente, **nos encontramos en la Etapa 2** (Diseño del modelo), estableciendo los parámetros y algoritmos necesarios para construir el puntaje de riesgo.
+
+---
+
+# Consideraciones Finales  
+- Es fundamental mantener la **calidad de los datos**: información incompleta o inexacta puede afectar la eficacia del modelo.  
+- El **análisis ético y de cumplimiento** de la segmentación de clientes debe considerarse para evitar sesgos o prácticas discriminatorias.  
+- Se recomienda realizar **informes periódicos** de los avances y resultados para garantizar la transparencia y el alineamiento con los objetivos de la empresa.  
+
+Para cualquier duda o requerimiento adicional, no duden en contactarme. Este reporte tiene como fin principal informar y facilitar la toma de decisiones estratégicas, asegurando que el proyecto se realice de forma eficiente y alineada con las metas de la organización.
