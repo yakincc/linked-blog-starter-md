@@ -15,16 +15,14 @@ Hasta este momento, Se tiene ya el primer bosquejo de la segmentación de client
 	- Ocupación
 	- Estado Civil
 
-- expcliente.hdi_cucrudo en Snowflake - Obtiene la información de las primas pagadas en Auto o en Daños, y los totales ocurridos en auto o en daños.
+- expcliente.hdi_cucrudo en Snowflake - Obtiene la información de las primas pagadas en Auto o en Daños, y los totales de siniestros ocurridos en auto o en daños.
 - TB_DWH_MedicionNPSAutos_Reparacion - Contiene la información del NPS de la empresa. Esta tabla es la tabla objetivo de la puntuación por cliente.
 - DWH.Tb_BI_GrlSinReporte - Tiene el concentrado de reportes de siniestros ocurridos. 
 - TB_BI_AutrFactEmisionDoc - Concentrado de documentos de emisión y cotizaciones.
 
 Se tiene también un primer acercamiento a la segmentación por vehículos, aunque esta produce clusters mayormente influenciados por la marca y el modelo del vehículo. Tiene sentido, pero habría que hacer mayor trabajo al respecto. Así mismo, a día de hoy no tenemos forma de definir cuales vehículos tienen una póliza vigente o no.
 
-Faltaría hacer la vinculación entre vehículos y reparaciones, para poder ver cómo afecta el tipo de vehículo y el centro de reparación en el NPS, y sobre esto, construir el modelo que asigne el puntaje de prioridad.
-
-
+Faltaría hacer la vinculación entre vehículos y reparaciones o valuaciones en general, para poder ver cómo afecta el tipo de vehículo y el centro de reparación en el NPS, y sobre esto, construir el modelo que asigne el puntaje de prioridad.
 
 
 
