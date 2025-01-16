@@ -20,7 +20,7 @@ Hasta este momento, Se tiene ya el primer bosquejo de la segmentación de client
 - DWH.Tb_BI_GrlSinReporte - Tiene el concentrado de reportes de siniestros ocurridos. 
 - TB_BI_AutrFactEmisionDoc - Concentrado de documentos de emisión y cotizaciones.
 
-Faltaría por completar la 
+Se tiene también un primer acercamiento a la segmentación por vehículos, aunque esta produce clusters mayormente influenciados por la marca y el modelo del vehículo. Tiene sentido, pero habría que hacer mayor trabajo al respecto, y en el caso de Flotillas hay una sobrerrepresentación 
 
 
 
