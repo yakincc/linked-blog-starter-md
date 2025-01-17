@@ -8,11 +8,11 @@ Además, se pretende que los clientes más importantes para la compañía, en t�
 ---
 
 ## 2. Antecedentes
-El área de reparaciones de la compañía atiende diariamente a múltiples clientes con diversas necesidades y tiempos de respuesta. No existe hasta el momento un proceso definido para determinar qué clientes debían ser atendidos con mayor prioridad basándose en:
+El área de reparaciones de la compañía atiende diariamente a múltiples clientes con diversas necesidades y tiempos de respuesta. Sin embargo, no existe hasta el momento un proceso definido para determinar qué clientes debían ser atendidos con mayor prioridad basándose en:
 1. Su probabilidad de dejar una reseña negativa (impactando el NPS).
 2. Su valor estratégico (póliza, historial y relación a largo plazo).
 
-Para cubrir esta necesidad, se inició el desarrollo de un “Modelo Concierge” que, a partir de:
+Para cubrir esta necesidad, se inició el desarrollo de un ***“Modelo Concierge”*** que, a partir de:
 
 - **Perfil Demográfico e Historial del Cliente** (probabilidad de reseña negativa y potencial de NPS).
 - **Características del Vehículo y la Póliza** (impacto monetario).
@@ -37,7 +37,7 @@ Desarrollar un modelo de regresión que calcule un puntaje de prioridad, enfocá
 
 ## 4. Alcance del Proyecto
 Este proyecto se limita a:
-- Clientes con póliza individual en el ramo de automóviles.
+- Clientes con póliza individual en el ramo de autos residentes.
 - Datos de siniestros, pólizas, emisiones y NPS, como se especifica en la sección de Metodología.
 
 No considera actualmente:
@@ -49,7 +49,7 @@ No considera actualmente:
 ## 5. Metodología
 Para la creación y entrenamiento del “Modelo Tipo Concierge”, se deben seguir estos pasos:
 
-1. **Recolección de Datos**: Desde la base de datos. Es quizás la parte más complicada y tardada del proyecto. Hasta el momento se tiene una buena 
+1. **Recolección de Datos**: Desde la base de datos. Es quizás la parte más complicada y tardada del proyecto. Hasta el momento se tiene una buena recopilación de diversas fuentes de datos desde el Data Warehouse que proporcionan una fuente sólida de información de clientes vigentes y vehículos, pero la información referente a primas netas se encuentra en Snowflake y es alimentada por un proceso manual, que es necesario automatizar antes de tener mayor avance en el proyecto.
 
 2. **Segmentación de Clientes**  
    - Estimar probabilidad de reseña negativa (posible NPS).  
@@ -57,10 +57,10 @@ Para la creación y entrenamiento del “Modelo Tipo Concierge”, se deben segu
 
 3. **Segmentación de Vehículos**  
    - Clasificar vehículos por marca y modelo.  
-   - Incorporar el estatus de póliza vigente.  
+   - Incorporar el estatus de póliza vigente (Pendiente).
 
 4. **Vinculación Vehículo-Reparaciones**  
-   - Integrar datos de reparaciones y valuaciones con la información de cada vehículo para medir el impacto en el NPS.  
+   - Integrar datos de reparaciones y valuaciones con la información de cada vehículo para medir el impacto en el NPS y poder predecirlo.  
 
 5. **Diseño e Implementación del Modelo de Regresión**  
    - Entrenar el modelo con los datos consolidados.  
@@ -70,15 +70,15 @@ Para la creación y entrenamiento del “Modelo Tipo Concierge”, se deben segu
 
 ## 6. Plan de Trabajo
 
-| Etapa                                    | Descripción                                                                            | Responsable     | Estado       |
-| ---------------------------------------- | -------------------------------------------------------------------------------------- | --------------- | -----------  |
-| **1. Recolección de Datos**              | Recolectar datos de Data Warehouse, Snowflake y otras fuentes                          | Uriel Domínguez | En proceso   |
-| **2. Segmentación de Clientes**          | Definir perfiles y clusters en función de NPS y valor                                  | Uriel Domínguez | Terminado    |
-| **3. Segmentación de Vehículos**         | Definir perfiles y clusters con base en características del vehículo y NPS             | Por asignar     | En proceso   |
-| **4. Vinculación Vehículo-Reparaciones** | Integrar registros de reparación y valuación con la información de vehículos y NPS     | Por asignar     | Por iniciar  |
-| **5. Diseño del Modelo de Regresión**    | Crear, entrenar y ajustar el modelo de puntaje de prioridad                            | Por asignar     | Por iniciar  |
-| **6. Validación Piloto**                 | Realizar pruebas preliminares con datos reales para obtener retroalimentación          | Por asignar     | Por iniciar  |
-| **7. Implementación Final**              | Desplegar el modelo en entorno productivo, integrándolo con los sistemas existentes    | Por asignar     | Por iniciar  |
+| Etapa                                    | Descripción                                                                         | Responsable     | Estado      |
+| ---------------------------------------- | ----------------------------------------------------------------------------------- | --------------- | ----------- |
+| **1. Recolección de Datos**              | Recolectar datos de Data Warehouse, Snowflake y otras fuentes                       | Uriel Domínguez | En proceso  |
+| **2. Segmentación de Clientes**          | Definir perfiles y clusters en función de NPS y valor                               | Uriel Domínguez | Terminado   |
+| **3. Segmentación de Vehículos**         | Definir perfiles y clusters con base en características del vehículo y NPS          | Por asignar     | En proceso  |
+| **4. Vinculación Vehículo-Reparaciones** | Integrar registros de reparación y valuación con la información de vehículos y NPS  | Por asignar     | Por iniciar |
+| **5. Diseño del Modelo de Regresión**    | Crear, entrenar y ajustar el modelo de puntaje de prioridad                         | Por asignar     | Por iniciar |
+| **6. Validación Piloto**                 | Realizar pruebas preliminares con datos reales para obtener retroalimentación       | Por asignar     | Por iniciar |
+| **7. Implementación Final**              | Desplegar el modelo en entorno productivo, integrándolo con los sistemas existentes | Por asignar     | Por iniciar |
 
 ---
 
@@ -92,7 +92,7 @@ Para la creación y entrenamiento del “Modelo Tipo Concierge”, se deben segu
 - **Asegurar la integridad y disponibilidad de los datos**: Optimizar el flujo de información de expcliente.hdi_cucrudo al Data Warehouse.  
 - **Completar la segmentación de vehículos**: Integrar la información de reparaciones y vincularla con el NPS.  
 - **Diseñar la fase de validación**: Probar el modelo de regresión y ajustar parámetros según resultados iniciales.  
-- **Definir un plan de despliegue**: Determinar cómo se integrará el puntaje de prioridad en el flujo de trabajo del área de reparaciones.  
+- **Definir un plan de despliegue**: Determinar cómo se integrará el puntaje de prioridad en el flujo de trabajo del área de reparaciones (Dashboards de Concierge).  
 - **Monitorear y mejorar**: Establecer indicadores clave (KPIs) para evaluar la eficacia del modelo y proponer actualizaciones continuas.
 
 ---
