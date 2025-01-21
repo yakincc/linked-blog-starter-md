@@ -41,7 +41,7 @@ Este proyecto se limita a:
 - Datos de siniestros, pólizas, emisiones y NPS, como se especifica en la sección de Metodología.
 
 No considera actualmente:
-- Otras líneas de negocio (Salud, Autos Turistas, etc.).
+- Otras líneas de negocio (Autos Turistas).
 - Clientes con flotillas o personas morales.
 
 ---
