@@ -1,16 +1,16 @@
 # Informe de Proyecto: Modelo Tipo Concierge
 
 ## 1. Resumen
-El proyecto “Modelo Tipo Concierge” busca asignar a los clientes del área de reparaciones de la compañía un puntaje que indique el nivel de prioridad para su atención. Este puntaje considera factores como las características demográficas del cliente, el tipo de vehículo y datos de la reparación, con el fin de disminuir la probabilidad de obtener un Net Promoter Score (NPS) bajo.  
+El proyecto “Modelo Tipo Concierge” busca asignar a los clientes del área de servicio de la compañía un puntaje que indique el nivel de prioridad para su atención. Este puntaje considera factores como las características demográficas del cliente, el tipo de vehículo y datos de la reparación, con el fin de disminuir la probabilidad de obtener un Net Promoter Score (NPS) bajo.  
 
 Además, se pretende que los clientes más importantes para la compañía, en términos de valor y trayectoria, reciban atención preferencial, fomentando así su permanencia y recomendación. A la fecha, se cuenta con un primer borrador de segmentación para clientes con póliza individual y un acercamiento preliminar para la segmentación de vehículos.
 
 ---
 
 ## 2. Antecedentes
-El área de reparaciones de la compañía atiende diariamente a múltiples clientes con diversas necesidades y tiempos de respuesta. Sin embargo, no existe hasta el momento un proceso definido para determinar qué clientes debían ser atendidos con mayor prioridad basándose en:
+El área de servicio de la compañía atiende diariamente a múltiples clientes con diversas necesidades y tiempos de respuesta. Sin embargo, no existe hasta el momento un proceso definido para determinar qué clientes debían ser atendidos con mayor prioridad basándose en:
 1. Su probabilidad de dejar una reseña negativa (impactando el NPS).
-2. Su valor estratégico (póliza, historial y relación a largo plazo).
+2. Su valor estratégico (póliza, resolución del siniestro, historial y relación a largo plazo).
 
 Para cubrir esta necesidad, se inició el desarrollo de un ***“Modelo Concierge”*** que, a partir de:
 
@@ -89,7 +89,7 @@ Para la creación y entrenamiento del “Modelo Tipo Concierge”, se deben segu
 ---
 
 ## 8. Próximos Pasos
-- **Asegurar la integridad y disponibilidad de los datos**: Optimizar el flujo de información de expcliente.hdi_cucrudo al Data Warehouse.  
+- **Asegurar la integridad y disponibilidad de los datos**: Llevar el flujo de información de CLTV de los clientes al Data Warehouse, dado que se encuentra como un proceso manual en Snowflake.
 - **Completar la segmentación de vehículos**: Integrar la información de reparaciones y vincularla con el NPS.  
 - **Diseñar la fase de validación**: Probar el modelo de regresión y ajustar parámetros según resultados iniciales.  
 - **Definir un plan de despliegue**: Determinar cómo se integrará el puntaje de prioridad en el flujo de trabajo del área de reparaciones (Dashboards de Concierge).  
