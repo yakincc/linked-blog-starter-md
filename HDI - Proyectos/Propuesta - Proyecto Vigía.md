@@ -12,5 +12,16 @@ Si bien a día de hoy tenemos varios visores que nos permiten ver e identificar 
 - Juntar la información con medidores de atención al cliente / rechazos / asignaciones.
 
 ### Métricas
-1. Tasa de Rechazos
-2. 
+1. Tiempos de Arribo
+2. Volumen de Reportes
+3. Cumplimiento de Bases
+4. Tasa de Rechazos de reportes
+5. Cobertura de zona de base (Regiones de Voronoi)
+6. Tiempos de Respuesta
+7. Arribos Anticipados / Arranques tardíos
+8. Distribución de reportes por horario
+9. Distribución de reportes por ubicación (FoL)
+10. Cierre de Reportes
+11. Tiempo de Ajuste
+
+### Propuesta de Desarrollo
